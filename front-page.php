@@ -13,22 +13,37 @@
 
 get_header(); ?>
 
+<style>
+.site-main{
+	margin:auto;
+}
+</style>
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<?php if ( have_posts() ) :
+		<?php 
+		//if ( have_posts() ) :
+			//get_template_part( 'loop' );
+		//else :
+			//get_template_part( 'content', 'none' );
+		//endif; ?>
 
-			get_template_part( 'loop' );
+		<?php 	$attachment_id = get_field('home_page_slider');
+				$size = "full";
+				$image = wp_get_attachment_image_src( $attachment_id, $size ); 	
+				if ( $image != 0 ) { ?>
 
-		else :
-
-			get_template_part( 'content', 'none' );
-
-		endif; ?>
+				<img src="<?php echo $image[0]; ?>" />
+				
+		<?php 	} else {
+				get_the_image( array( 'size' => 'thumbnail', 'default_image' => get_stylesheet_directory_uri() . '/images/placeholder.jpg' ) );
+		} ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php
-do_action( 'storefront_sidebar' );
-get_footer();
+//do_action( 'storefront_sidebar' );
+get_footer(); ?>
+
