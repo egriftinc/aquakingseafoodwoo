@@ -13,37 +13,54 @@
 
 get_header(); ?>
 
-<style>
-.site-main{
-	margin:auto;
-}
-</style>
+
+<?php 
+
+			if( is_front_page() ) {
+				if(function_exists('get_field')){
+					if( get_field('slider_image_1') || get_field('slider_image_2') || get_field('slider_image_3') || get_field('slider_image_4') || get_field('slider_image_5') || get_field('slider_image_6') ) {
+						echo "<div class='slider-frame'>";
+						$image1 = get_field('slider_image_1');
+						$image2 = get_field('slider_image_2');
+						$image3 = get_field('slider_image_3');
+						$image4 = get_field('slider_image_4');
+						$image5 = get_field('slider_image_5');
+						$image6 = get_field('slider_image_6');
+						$size = 'slider';
+						echo "<div class='slider'>";
+						echo wp_get_attachment_image( $image1, $size );
+						echo wp_get_attachment_image( $image2, $size );
+						echo wp_get_attachment_image( $image3, $size );
+						echo wp_get_attachment_image( $image4, $size );
+						echo wp_get_attachment_image( $image5, $size );
+						echo wp_get_attachment_image( $image6, $size );
+						echo "</div>";
+						echo "</div>";
+					}
+				}
+			}
+
+
+		 ?>
+
+
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<?php 
-		//if ( have_posts() ) :
-			//get_template_part( 'loop' );
-		//else :
-			//get_template_part( 'content', 'none' );
-		//endif; ?>
+		<?php if ( have_posts() ) :
 
-		<?php 	$attachment_id = get_field('home_page_slider');
-				$size = "full";
-				$image = wp_get_attachment_image_src( $attachment_id, $size ); 	
-				if ( $image != 0 ) { ?>
+			get_template_part( 'loop' );
 
-				<img src="<?php echo $image[0]; ?>" />
-				
-		<?php 	} else {
-				get_the_image( array( 'size' => 'thumbnail', 'default_image' => get_stylesheet_directory_uri() . '/images/placeholder.jpg' ) );
-		} ?>
+		else :
+
+			get_template_part( 'content', 'none' );
+
+		endif; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php
-//do_action( 'storefront_sidebar' );
-get_footer(); ?>
-
+do_action( 'storefront_sidebar' );
+get_footer();
