@@ -73,3 +73,12 @@ function sv_unrequire_wc_phone_field( $fields ) {
     return $fields;
 }
 add_filter( 'woocommerce_billing_fields', 'sv_unrequire_wc_phone_field' );
+
+
+function storefront_scripts() {
+	wp_enqueue_style('fitness_forte-slicktheme', get_template_directory_uri() . '/css/slick-theme.css');
+    wp_enqueue_style('fitness_forte-slick', get_template_directory_uri() . '/css/slick.css');
+    wp_enqueue_script('fitness_forte-slickjs', get_template_directory_uri() . '/js/slick.min.js', array('jquery'), '20180122', true);
+    wp_enqueue_script('fitness_forte-slicksettings', get_template_directory_uri() . '/js/slick-settings.js', array('fitness_forte-slickjs'), '20180221', true);
+}
+add_action( 'wp_enqueue_scripts', 'storefront_scripts' );
