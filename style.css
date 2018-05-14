@@ -290,7 +290,7 @@ h6 a {
 h1 {
     font-size: 2.617924em;
     line-height: 1.214;
-    letter-spacing: -1px
+    letter-spacing: -1px;
 }
 
 .beta,
@@ -319,7 +319,7 @@ h4 {
 .beta,
 .delta,
 .gamma {
-    display: block
+    display: none;
 }
 
 blockquote+h2,
@@ -1005,7 +1005,8 @@ table tbody h2 a {
 
 .hentry.type-page .entry-header {
     border-bottom: 0;
-    margin-bottom: 0
+    margin-bottom: 0;
+    display: none;
 }
 
 .byline,
@@ -1518,7 +1519,7 @@ button.menu-toggle:after {
 }
 
 .main-navigation ul li a:hover {
-    color: #e6e6e6
+    color: #e6e6e6; 
 }
 
 .site-main nav.navigation {
@@ -1828,7 +1829,7 @@ button.menu-toggle:after {
         text-align: left
     }
     .site-header {
-        padding-top: 1.5em;
+        padding-top: 3em;
         padding-bottom: 0
     }
     .site-header .site-branding {
@@ -1881,6 +1882,11 @@ button.menu-toggle:after {
         margin-right: 0;
         margin-bottom: 0
     }
+
+    .woocommerce-products-header{
+    	display: none;
+    }
+
     .site-branding .site-description {
         margin-bottom: 0;
         display: block
@@ -2297,28 +2303,17 @@ button.menu-toggle:after {
 
     .main-navigation ul.menu>li>a,
     .main-navigation ul.nav-menu>li>a {
-        padding: 1.618em 1em
+        padding: 8px;
     }
     .main-navigation ul.menu>li:first-child,
     .main-navigation ul.nav-menu>li:first-child {
-        margin-left: -1em
+        margin-left: 0em;
     }
 
     .main-navigation ul.menu>li:last-child,
     .main-navigation ul.nav-menu>li:last-child {
-        margin-left: 5em;
+        margin-left: 4em;
     }
-
-    .menu-login-register{
-    	font-size: 1em;
-    	font-weight: bold;
-    }
-
-    .menu-login-register-en{
-    	font-size: 0.8em;
-    	font-weight: bold;
-    }
-
 
     .main-navigation ul.menu>li.menu-item-has-children:hover:after,
     .main-navigation ul.menu>li.page_item_has_children:hover:after,
@@ -2405,6 +2400,7 @@ button.menu-toggle:after {
         margin-right: 0
     }
 }
+
 
 @media (max-width:66.4989378333em) {
     .col-full {
