@@ -2310,11 +2310,6 @@ button.menu-toggle:after {
         margin-left: 0em;
     }
 
-    .main-navigation ul.menu>li:last-child,
-    .main-navigation ul.nav-menu>li:last-child {
-        margin-left: 4em;
-    }
-
     .main-navigation ul.menu>li.menu-item-has-children:hover:after,
     .main-navigation ul.menu>li.page_item_has_children:hover:after,
     .main-navigation ul.nav-menu>li.menu-item-has-children:hover:after,
@@ -2398,6 +2393,44 @@ button.menu-toggle:after {
         width: 47.8260869565%;
         float: right;
         margin-right: 0
+    }
+}
+
+
+@media (min-width:860px) and (max-width: 929px){
+    .main-navigation ul.menu>li>a,
+    .main-navigation ul.nav-menu>li>a {
+        padding: 8px 4px;
+    }
+}
+
+@media (min-width:797px) and (max-width: 860px){
+    .main-navigation ul.menu>li>a,
+    .main-navigation ul.nav-menu>li>a {
+        padding: 8px 1px;
+    }
+}
+
+@media (min-width:768px) and (max-width: 797px){
+    .main-navigation ul.menu>li>a,
+    .main-navigation ul.nav-menu>li>a {
+        padding: 8px 0px;
+    }
+    .menu-home, .menu-about-us, .menu-live-seafood, .menu-fresh-seafood, .menu-frozen-seafood, .menu-other-food, .menu-login-register{
+		font-size: 1em;
+	}
+
+	.menu-home-en, .menu-about-us-en, .menu-live-seafood-en, .menu-fresh-seafood-en, .menu-frozen-seafood-en, .menu-other-food-en, .menu-login-register-en{
+		font-size: 0.9em;
+	}
+
+}
+
+
+@media (min-width:1100px) {
+    .main-navigation ul.menu>li:last-child,
+    .main-navigation ul.nav-menu>li:last-child {
+        margin-left: 15%;
     }
 }
 
