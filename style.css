@@ -255,7 +255,7 @@ input,
 textarea {
     color: #43454b;
     font-family: "Source Sans Pro", HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    line-height: 1.618;
+    line-height: 1.2;
     text-rendering: optimizeLegibility;
     font-weight: 400
 }
@@ -521,7 +521,7 @@ body {
     background-position: center center;
     position: relative;
     z-index: 999;
-    border-bottom: 1px solid transparent
+/*    border-bottom: 1px solid transparent*/
 }
 
 .site-header .custom-logo-link,
@@ -544,7 +544,7 @@ body {
 .home.blog .site-header,
 .home.page:not(.page-template-template-homepage) .site-header,
 .home.post-type-archive-product .site-header {
-    margin-bottom: 4.235801032em
+    margin-bottom: 0em
 }
 
 .no-wc-breadcrumb .site-header {
@@ -627,7 +627,7 @@ body {
     max-width: 41.0994671405em;
     margin-left: auto;
     margin-right: auto;
-    text-align: center
+    text-align: center;
 }
 
 .page-template-template-homepage.has-post-thumbnail .type-page.has-post-thumbnail {
@@ -1828,7 +1828,7 @@ button.menu-toggle:after {
         text-align: left
     }
     .site-header {
-        padding-top: 2.617924em;
+        padding-top: 1.5em;
         padding-bottom: 0
     }
     .site-header .site-branding {
@@ -1843,6 +1843,21 @@ button.menu-toggle:after {
         max-width: 100%;
         max-height: none
     }
+
+	.site-header .custom-logo-link img,
+	.site-header .site-logo-anchor img,
+	.site-header .site-logo-link img {
+	    max-width: 310px
+	}
+
+	.menu-home, .menu-about-us, .menu-live-seafood, .menu-fresh-seafood, .menu-frozen-seafood, .menu-other-food, .menu-login-register{
+		font-size: 1.05em;
+	}
+
+	.menu-home-en, .menu-about-us-en, .menu-live-seafood-en, .menu-fresh-seafood-en, .menu-frozen-seafood-en, .menu-other-food-en, .menu-login-register-en{
+		font-size: 0.9em;
+	}
+
     .woocommerce-active .site-header .secondary-navigation {
         width: 47.8260869565%;
         float: left;
@@ -2185,7 +2200,7 @@ button.menu-toggle:after {
     .secondary-navigation ul li {
         position: relative;
         display: inline-block;
-        text-align: left
+        text-align: center;
     }
     .main-navigation ul li a,
     .secondary-navigation ul li a {
@@ -2233,7 +2248,7 @@ button.menu-toggle:after {
         position: absolute;
         top: 100%;
         z-index: 99999;
-        left: -9999px
+        left: -9999px;
     }
     .main-navigation ul ul.sub-menu--is-touch-device,
     .secondary-navigation ul ul.sub-menu--is-touch-device {
@@ -2258,6 +2273,7 @@ button.menu-toggle:after {
         padding-left: 99em;
         padding-right: 99em
     }
+
     .storefront-primary-navigation:after,
     .storefront-primary-navigation:before {
         content: "";
@@ -2267,13 +2283,18 @@ button.menu-toggle:after {
         clear: both
     }
     .main-navigation div.menu {
-        display: block
+        display: block;
     }
     .main-navigation ul.menu,
     .main-navigation ul.nav-menu {
         max-height: none;
         overflow: visible
     }
+
+    .main-navigation ul.menu>li{
+		font-family: Arial Narrow, Arial, sans-serif;
+    }
+
     .main-navigation ul.menu>li>a,
     .main-navigation ul.nav-menu>li>a {
         padding: 1.618em 1em
@@ -2282,6 +2303,23 @@ button.menu-toggle:after {
     .main-navigation ul.nav-menu>li:first-child {
         margin-left: -1em
     }
+
+    .main-navigation ul.menu>li:last-child,
+    .main-navigation ul.nav-menu>li:last-child {
+        margin-left: 5em;
+    }
+
+    .menu-login-register{
+    	font-size: 1em;
+    	font-weight: bold;
+    }
+
+    .menu-login-register-en{
+    	font-size: 0.8em;
+    	font-weight: bold;
+    }
+
+
     .main-navigation ul.menu>li.menu-item-has-children:hover:after,
     .main-navigation ul.menu>li.page_item_has_children:hover:after,
     .main-navigation ul.nav-menu>li.menu-item-has-children:hover:after,

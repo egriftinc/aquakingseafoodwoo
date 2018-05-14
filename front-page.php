@@ -62,5 +62,6 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php
-do_action( 'storefront_sidebar' );
+// do_action( 'storefront_sidebar' );
 get_footer();
+?>
