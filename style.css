@@ -2426,7 +2426,6 @@ button.menu-toggle:after {
 
 }
 
-
 @media (min-width:1100px) {
     .main-navigation ul.menu>li:last-child,
     .main-navigation ul.nav-menu>li:last-child {
@@ -2451,3 +2450,19 @@ button.menu-toggle:after {
     }
 }
 
+@media (max-width:360px) {
+	.site-header .custom-logo-link img,
+	.site-header .site-logo-anchor img,
+	.site-header .site-logo-link img {
+	    max-width: 150px;
+	}
+}
+
+@media (max-width:312px) {
+	.site-header .custom-logo-link img,
+	.site-header .site-logo-anchor img,
+	.site-header .site-logo-link img {
+		margin-top: 5px;
+	    max-width: 100px;
+	}
+}
