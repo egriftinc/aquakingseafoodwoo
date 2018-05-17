@@ -2624,3 +2624,14 @@ dl.variation dd {
         padding: 1em
     }
 }
+
+/*Yolanda added*/
+.featured_product_front_page_title{
+    width: 80%;
+    float: left;
+}
+
+.view-more-live{
+    width: 20%;
+    float: left;
+}
