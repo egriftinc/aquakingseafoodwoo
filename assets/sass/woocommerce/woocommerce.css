@@ -238,7 +238,7 @@ ul.products li.product {
     margin-left: 0;
     margin-bottom: 4.235801032em;
     text-align: center;
-    position: relative
+    position: relative;
 }
 
 ul.products li.product .star-rating {
@@ -2626,12 +2626,50 @@ dl.variation dd {
 }
 
 /*Yolanda added*/
-.featured_product_front_page_title{
-    width: 80%;
+.shape_left{
+    width: 15%;
     float: left;
+    border-bottom: 32px solid #d9f1fa;
+    border-left: 0px solid transparent;
+    border-right: 32px solid transparent;
+    height: 0;
 }
 
-.view-more-live{
+.shape_right{
     width: 20%;
     float: left;
+    border-bottom: 32px solid #d9f1fa;
+    border-left: 0px solid transparent;
+    border-right: 32px solid transparent;
+    height: 0;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 15% 100%);
+}
+
+.featured_product_front_page_title{
+    width: auto;
+    float: left;
+    font-size: 28px;
+    clear: none;
+    color: #9fbfbc;
+}
+
+.view-more-live, .view-more-fresh, .view-more-frozen, .view-more-other{
+    width: 20%;
+    float: right;
+    text-align: center;
+}
+
+@media (min-width:275px) and (max-width:768px) {
+    ul.products li.product  {
+        float: left;
+        width: 48%;
+        margin-right: 3.8%
+    }
+
+    ul.products li.product.first {
+        clear: both!important
+    }
+    ul.products li.product:nth-child(2n) {
+        margin-right: 0!important
+    }
 }

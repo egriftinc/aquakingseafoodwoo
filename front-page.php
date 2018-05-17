@@ -43,10 +43,13 @@ get_header(); ?>
 
 		 ?>
 
+
+<div class="shape_left"></div>
 <h1 class="featured_product_front_page_title">
 	<span class="featured_product_front_page_title_ch">游水海鮮</span>
 	<span class="featured_product_front_page_title_en">Live Seafood</span>
 </h1>
+<div class="shape_right"></div>
 <!-- below div view more button -->
 <div class="view-more-live">
 	<span class="view-more-live-ch">更多產品</span>
@@ -56,11 +59,12 @@ get_header(); ?>
 	<?php echo do_shortcode('[featured_product_categories cats="17" per_cat="4" columns="4"]'); ?>
 
 
-
+<div class="shape_left"></div>
 <h1 class="featured_product_front_page_title">
 	<span class="featured_product_front_page_title_ch">新鮮海鮮</span>
 	<span class="featured_product_front_page_title_en">Fresh Seafood</span>
 </h1>
+<div class="shape_right"></div>
 <!-- below div view more button -->
 <div class="view-more-fresh">
 	<span class="view-more-fresh-ch">更多產品</span>
@@ -70,11 +74,12 @@ get_header(); ?>
 	<?php echo do_shortcode('[featured_product_categories cats="18" per_cat="4" columns="4"]'); ?>
 
 
-
+<div class="shape_left"></div>
 <h1 class="featured_product_front_page_title">
 	<span class="featured_product_front_page_title_ch">急凍海鮮</span>
-	<span class="featured_product_front_page_title_en">Featured Frozen Seafood</span>
+	<span class="featured_product_front_page_title_en">Frozen Seafood</span>
 </h1>
+<div class="shape_right"></div>
 <!-- below div view more button -->
 <div class="view-more-frozen">
 	<span class="view-more-frozen-ch">更多產品</span>
@@ -84,11 +89,12 @@ get_header(); ?>
 	<?php echo do_shortcode('[featured_product_categories cats="16" per_cat="4" columns="4"]'); ?>
 
 
-
+<div class="shape_left"></div>
 <h1 class="featured_product_front_page_title">
 	<span class="featured_product_front_page_title_ch">其他食材</span>
-	<span class="featured_product_front_page_title_en">Featured Other Seafood</span>
+	<span class="featured_product_front_page_title_en">Other Food</span>
 </h1>
+<div class="shape_right"></div>
 <!-- below div view more button -->
 <div class="view-more-other">
 	<span class="view-more-other-ch">更多產品</span>
