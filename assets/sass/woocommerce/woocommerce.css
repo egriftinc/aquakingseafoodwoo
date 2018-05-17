@@ -1910,7 +1910,8 @@ dl.variation dd {
     }
     ul.products li.product {
         clear: none;
-        width: 100%;
+        width: 25%;
+        padding:2%;
         float: left;
         font-size: .875em
     }
