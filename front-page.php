@@ -46,7 +46,7 @@ get_header(); ?>
 
 <div class="shape_left"></div>
 <h1 class="featured_product_front_page_title">
-	<span class="featured_product_front_page_title_ch">游水海鮮</span>
+	<span class="featured_product_front_page_title_ch">游水海鮮  </span>
 	<span class="featured_product_front_page_title_en">Live Seafood</span>
 </h1>
 <div class="shape_right"></div>
@@ -61,7 +61,7 @@ get_header(); ?>
 
 <div class="shape_left"></div>
 <h1 class="featured_product_front_page_title">
-	<span class="featured_product_front_page_title_ch">新鮮海鮮</span>
+	<span class="featured_product_front_page_title_ch">新鮮海鮮  </span>
 	<span class="featured_product_front_page_title_en">Fresh Seafood</span>
 </h1>
 <div class="shape_right"></div>
@@ -76,7 +76,7 @@ get_header(); ?>
 
 <div class="shape_left"></div>
 <h1 class="featured_product_front_page_title">
-	<span class="featured_product_front_page_title_ch">急凍海鮮</span>
+	<span class="featured_product_front_page_title_ch">急凍海鮮  </span>
 	<span class="featured_product_front_page_title_en">Frozen Seafood</span>
 </h1>
 <div class="shape_right"></div>
@@ -91,7 +91,7 @@ get_header(); ?>
 
 <div class="shape_left"></div>
 <h1 class="featured_product_front_page_title">
-	<span class="featured_product_front_page_title_ch">其他食材</span>
+	<span class="featured_product_front_page_title_ch">其他食材  </span>
 	<span class="featured_product_front_page_title_en">Other Food</span>
 </h1>
 <div class="shape_right"></div>

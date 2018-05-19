@@ -319,7 +319,7 @@ h4 {
 .beta,
 .delta,
 .gamma {
-    display: none;
+/*    display: none;*/
 }
 
 blockquote+h2,
@@ -1659,10 +1659,10 @@ button.menu-toggle:after {
 
 .widget .widget-title,
 .widget .widgettitle {
-    font-size: 1.41575em;
+    font-size: 1.2em;
     letter-spacing: 0;
     border-bottom: 1px solid rgba(0, 0, 0, .05);
-    padding: 0 0 1em;
+/*    padding: 0 0 1em;*/
     margin-bottom: 1em;
     font-weight: 300
 }
