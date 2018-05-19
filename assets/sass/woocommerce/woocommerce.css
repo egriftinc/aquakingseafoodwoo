@@ -2748,7 +2748,7 @@ dl.variation dd {
 
 @media (max-width:390px) {
     .slick-dotted.slick-slider{
-        margin-bottom: 15px;
+        margin-bottom: 30px;
     }
 
     .shape_left{
@@ -2760,11 +2760,16 @@ dl.variation dd {
     }
 
     .featured_product_front_page_title{
-        font-size: 16px;
+        font-size: 18px;
         padding-top: 5px;
+        padding-bottom: 2px;
+        padding-left: 5px;  
+        width: 55%;
+        border-bottom:double;
     }
 
     .view-more-live, .view-more-fresh, .view-more-frozen, .view-more-other{
+        padding-top: 5px;
         width: 30%;
         line-height: 0.8;
     }
