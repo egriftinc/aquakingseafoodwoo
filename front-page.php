@@ -68,7 +68,7 @@ get_header(); ?>
 <div class="shape_right"></div>
 <!-- below div view more button -->
 <div class="view-more-fresh">
-	<a href=https://aquakingseafood.com/product-category/fresh-seafood/><span class="view-more-fresh-ch">更多產品</span>
+	<a class="view-more-fresh" href=https://aquakingseafood.com/product-category/fresh-seafood/><span class="view-more-fresh-ch">更多產品</span>
 	</br>
 	<span class="view-more-fresh-en">View More</span>
 </a>

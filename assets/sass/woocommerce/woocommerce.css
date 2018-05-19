@@ -2673,10 +2673,12 @@ dl.variation dd {
 
 .view-more-live-ch, .view-more-fresh-ch, .view-more-frozen-ch, .view-more-other-ch{
     font-size: 16px;
+    color:#2080BD;
 }
 
 .view-more-live-en, .view-more-fresh-en, .view-more-frozen-en, .view-more-other-en{
     font-size: 15px;
+    color:#2080BD;
 }
 
 @media (min-width:275px) and (max-width:768px) {
