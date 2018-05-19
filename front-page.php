@@ -52,9 +52,10 @@ get_header(); ?>
 <div class="shape_right"></div>
 <!-- below div view more button -->
 <div class="view-more-live">
-	<span class="view-more-live-ch">更多產品</span>
+	<a href=https://aquakingseafood.com/product-category/live-seafood/><span class="view-more-live-ch">更多產品</span>
 	</br>
 	<span class="view-more-live-en">View More</span>
+</a>
 </div>
 	<?php echo do_shortcode('[featured_product_categories cats="17" per_cat="4" columns="4"]'); ?>
 
@@ -67,9 +68,10 @@ get_header(); ?>
 <div class="shape_right"></div>
 <!-- below div view more button -->
 <div class="view-more-fresh">
-	<span class="view-more-fresh-ch">更多產品</span>
+	<a href=https://aquakingseafood.com/product-category/fresh-seafood/><span class="view-more-fresh-ch">更多產品</span>
 	</br>
 	<span class="view-more-fresh-en">View More</span>
+</a>
 </div>
 	<?php echo do_shortcode('[featured_product_categories cats="18" per_cat="4" columns="4"]'); ?>
 
@@ -82,9 +84,10 @@ get_header(); ?>
 <div class="shape_right"></div>
 <!-- below div view more button -->
 <div class="view-more-frozen">
-	<span class="view-more-frozen-ch">更多產品</span>
+	<a href=https://aquakingseafood.com/product-category/frozen-seafood/><span class="view-more-frozen-ch">更多產品</span>
 	</br>
 	<span class="view-more-frozen-en">View More</span>
+</a>
 </div>
 	<?php echo do_shortcode('[featured_product_categories cats="16" per_cat="4" columns="4"]'); ?>
 
@@ -97,9 +100,10 @@ get_header(); ?>
 <div class="shape_right"></div>
 <!-- below div view more button -->
 <div class="view-more-other">
-	<span class="view-more-other-ch">更多產品</span>
+	<a href=https://aquakingseafood.com/product-category/other-seafood/><span class="view-more-other-ch">更多產品</span>
 	</br>
 	<span class="view-more-other-en">View More</span>
+</a>
 </div>
 	<?php echo do_shortcode('[featured_product_categories cats="15" per_cat="4" columns="4"]'); ?>
 
